@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header
-      style="
-        text-align: center;
-        font-family: &quot;Courier New&quot;, Courier, monospace;
-        font-size: x-large;
-      "
-    >
-      <h5>Hey Guys!! its my portfolio</h5>
-    </header>
+<header style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: x-large;">
+    <h5>Hey Guys!! its my portfolio</h5>
+    <button id="themeToggle">🌙 Dark Mode</button>
+</header>
     <section class="hero">
       <img src="assets/images/jungkookie.jpeg" alt="Me" />
       <h1>Name: Aishitha</h1>
       <p>
+        <span id="timeGreeting" style="font-family: 'Times New Roman', Times, serif;"></span>
         "Hello! I’m <b>Aishitha</b>, a <b>tech enthusiast</b> and
         <b>creative thinker</b>. I am currently pursuing my
         <b>B.Tech in CSE</b>, focusing on <b>Java Programming</b> and
@@ -68,7 +64,7 @@
     </section>
 
     <section>
-      <form>
+      <form action="#" id="contactform">  <!-- # -> tells the form to be right here as we dont have  a backend server yet-->
         <table>
           <caption>
             Contact me
@@ -150,5 +146,6 @@
         </table>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
